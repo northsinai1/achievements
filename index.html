@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنجازات محافظة شمال سيناء</title>
+  <link rel="icon" href="./imgs/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <img src="./imgs/logo2.png" alt="شعار 1" class="header__logo">
+    <h4 class="header__title">محافظة شمال سيناء<br>إدارة العريش التعليمية<br>مدرسة صلاح الدين الدامجة </h4>
+    <img src="./imgs/logo3.png" alt="شعار 2" class="header__logo">
+  </header>
+
+  <!-- ===== MAIN CONTAINER ===== -->
+  <main class="main">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <img class="hero__logo" src="./imgs/logo.png" alt="شعار">
+      <h2 class="hero__title">إنجازات محافظة شمال سيناء</h2>
+
+      <!-- ===== LATEST NEWS SLIDER ===== -->
+      <div class="last-achievements">
+        <h3 class="last-achievements__title">أحــــــــدث الإنجــــــــــــــــازات</h3>
+
+        <div class="slider" aria-label="عارض الأخبار">
+          <div class="slider__viewer" id="viewer">
+            
+            <div class="slider__slide active" data-index="0">
+              <img src="./imgs/0-s.png">
+              <div class="slider__overlay">
+    <h3 class="slider__headline">إنشاء 14 تجمعًا تنمويًا حضريًا</h3>
+    <p class="slider__subtitle">ينفذها الجهاز المركزي للتعمير لتسريع التنمية وتوفير الخدمات الأساسية في شمال سيناء.</p>
+              </div>
+            </div>
+
+            <div class="slider__slide" data-index="1">
+              <img src="./imgs/1-s.png">
+              <div class="slider__overlay">
+    <h3 class="slider__headline">محطة تحلية مياه "Skadra 2"</h3>
+    <p class="slider__subtitle">محطة بسعة 5,000 م³/يوم لتأمين احتياجات مياه مدينة الشيخ زويد والمناطق المجاورة.</p>
+              </div>
+            </div>
+
+            <div class="slider__slide" data-index="2">
+              <img src="./imgs/2-s.png">
+              <div class="slider__overlay">
+    <h3 class="slider__headline">تطوير ميناء العريش</h3>
+    <p class="slider__subtitle">بناء رصيف "تحيا مصر" بطول 915 مترًا ورصيف بحري سيناوي بطول 250 مترًا لتعزيز الحركة البحرية واللوجستية.</p>
+              </div>
+            </div>
+
+            <div class="slider__slide" data-index="3">
+              <img src="./imgs/3-s.png">
+              <div class="slider__overlay">
+    <h3 class="slider__headline">التوسع في جامعة العريش</h3>
+    <p class="slider__subtitle">إنشاء 11 كلية جديدة وزيادة الطاقة الاستيعابية للطلاب مع إدخال برامج دراسات عليا جديدة.</p>
+              </div>
+            </div>
+
+            <div class="slider__slide" data-index="4">
+              <img src="./imgs/4-s.png">
+              <div class="slider__overlay">
+    <h3 class="slider__headline">تطوير بحيرة البردويل</h3>
+    <p class="slider__subtitle">أعمال التطوير قيد التنفيذ (نحو 85% من المخطط) لتحسين جودة المياه وتوسيع نشاط الصيد المحلي.</p>
+              </div>
+            </div>
+
+            <div class="slider__slide" data-index="5">
+              <img src="./imgs/5-s.png">
+              <div class="slider__overlay">
+    <h3 class="slider__headline">مشروع استصلاح 109 آلاف فدان</h3>
+    <p class="slider__subtitle">منطقة زراعية كبرى ضمن خطط استصلاح الأراضي لزيادة الإنتاج الزراعي وتعزيز الأمن الغذائي.</p>
+              </div>
+            </div>
+
+            <div class="slider__slide" data-index="6">
+              <img src="./imgs/6-s.png">
+              <div class="slider__overlay">
+    <h3 class="slider__headline">مشروعات بنية تحتية وخدمات</h3>
+    <p class="slider__subtitle">سلسلة مشاريع في الطرق والكهرباء وتحسين البيئة والإنارة والوحدات المحلية لتعزيز جودة الخدمات العامة.</p>
+              </div>
+            </div>
+
+            <button class="slider__btn slider__btn--left" id="prevBtn" aria-label="السابق">»</button>
+            <button class="slider__btn slider__btn--right" id="nextBtn" aria-label="التالي">«</button>
+          </div>
+
+          <div class="slider__dots" id="dots"></div>
+        </div>
+      </div>
+
+      <!-- ===== YEAR TABS ===== -->
+      <div class="tabs" role="tablist" aria-label="خيارات">
+        <button class="tabs__btn" data-target="content2023" aria-controls="content-area" aria-pressed="false">2023</button>
+        <button class="tabs__btn" data-target="content2024" aria-controls="content-area" aria-pressed="false">2024</button>
+        <button class="tabs__btn" data-target="content2025" aria-controls="content-area" aria-pressed="false">2025</button>
+      </div>
+
+      <div id="content-area" class="tabs__content" aria-live="polite" hidden></div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <h2 class="footer__title">مسابقة "إنجازات بلدي" مقدمة من إدارة تنمية مادة الكمبيوتر التعليمي</h2>
+    <h3 class="footer__subtitle">تقديم الطالب: عبدالرحمن محمد منصور محمود<br>تحت إشراف: أ/ أسماء نجيب آدم<br>موجه عام الكمبيوتر: أ/ سحر محمد رخا</h3>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
